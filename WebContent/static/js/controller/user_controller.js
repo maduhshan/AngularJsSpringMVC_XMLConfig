@@ -2,6 +2,8 @@
 
 angular.module('myApp').controller('UserController', ['$scope', 'UserService', function($scope, UserService){
 	
+//	$scope.registerUser = true;
+	
 	var self = this;
 	self.user = {id:null, username:'', address:'', email:''};
 	self.users = [];

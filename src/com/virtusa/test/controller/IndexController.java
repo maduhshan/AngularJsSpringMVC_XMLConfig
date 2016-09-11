@@ -9,7 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class IndexController {
 
 	@RequestMapping(method = RequestMethod.GET)
-    public String getIndexPage() {
-        return "UserManagement";
-    }
+	public String getHomePage() {
+		return "UserManagement";
+	}
+
+	@RequestMapping(value = "/RegisterUser", method = RequestMethod.GET)
+	public String getRegisterUser() {
+		return "RegisterUser";
+	}
 }
